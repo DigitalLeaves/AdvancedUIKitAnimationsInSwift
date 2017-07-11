@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66116C9C1F14BDF500B9D9D2 /* definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66116C9B1F14BDF500B9D9D2 /* definitions.swift */; };
+		661FBEDB1F14B5860073AED5 /* BasicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661FBEDA1F14B5860073AED5 /* BasicAnimationViewController.swift */; };
+		661FBEDD1F14B58C0073AED5 /* AnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661FBEDC1F14B58C0073AED5 /* AnimatorViewController.swift */; };
+		661FBEDF1F14B5940073AED5 /* SpringAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661FBEDE1F14B5940073AED5 /* SpringAnimatorViewController.swift */; };
+		661FBEE11F14B59D0073AED5 /* InteractiveAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661FBEE01F14B59C0073AED5 /* InteractiveAnimationViewController.swift */; };
 		663CCE501F127909000047BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663CCE4F1F127909000047BE /* AppDelegate.swift */; };
 		663CCE521F127909000047BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663CCE511F127909000047BE /* ViewController.swift */; };
 		663CCE551F127909000047BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663CCE531F127909000047BE /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66116C9B1F14BDF500B9D9D2 /* definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = definitions.swift; sourceTree = "<group>"; };
+		661FBEDA1F14B5860073AED5 /* BasicAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimationViewController.swift; sourceTree = "<group>"; };
+		661FBEDC1F14B58C0073AED5 /* AnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorViewController.swift; sourceTree = "<group>"; };
+		661FBEDE1F14B5940073AED5 /* SpringAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimatorViewController.swift; sourceTree = "<group>"; };
+		661FBEE01F14B59C0073AED5 /* InteractiveAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveAnimationViewController.swift; sourceTree = "<group>"; };
 		663CCE4C1F127909000047BE /* AdvancedUIKitAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedUIKitAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		663CCE4F1F127909000047BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		663CCE511F127909000047BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +45,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		661FBED71F14B5520073AED5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				663CCE511F127909000047BE /* ViewController.swift */,
+				661FBEDA1F14B5860073AED5 /* BasicAnimationViewController.swift */,
+				661FBEDC1F14B58C0073AED5 /* AnimatorViewController.swift */,
+				661FBEDE1F14B5940073AED5 /* SpringAnimatorViewController.swift */,
+				661FBEE01F14B59C0073AED5 /* InteractiveAnimationViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		661FBED81F14B55D0073AED5 /* App & Resources */ = {
+			isa = PBXGroup;
+			children = (
+				663CCE4F1F127909000047BE /* AppDelegate.swift */,
+				663CCE561F127909000047BE /* Assets.xcassets */,
+				66116C9B1F14BDF500B9D9D2 /* definitions.swift */,
+			);
+			path = "App & Resources";
+			sourceTree = "<group>";
+		};
+		661FBED91F14B5670073AED5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				663CCE531F127909000047BE /* Main.storyboard */,
+				663CCE581F127909000047BE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		663CCE431F127909000047BE = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +95,10 @@
 		663CCE4E1F127909000047BE /* AdvancedUIKitAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				663CCE4F1F127909000047BE /* AppDelegate.swift */,
-				663CCE511F127909000047BE /* ViewController.swift */,
-				663CCE531F127909000047BE /* Main.storyboard */,
-				663CCE561F127909000047BE /* Assets.xcassets */,
-				663CCE581F127909000047BE /* LaunchScreen.storyboard */,
 				663CCE5B1F127909000047BE /* Info.plist */,
+				661FBED91F14B5670073AED5 /* Storyboards */,
+				661FBED81F14B55D0073AED5 /* App & Resources */,
+				661FBED71F14B5520073AED5 /* View Controllers */,
 			);
 			path = AdvancedUIKitAnimations;
 			sourceTree = "<group>";
@@ -135,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661FBEE11F14B59D0073AED5 /* InteractiveAnimationViewController.swift in Sources */,
 				663CCE521F127909000047BE /* ViewController.swift in Sources */,
+				66116C9C1F14BDF500B9D9D2 /* definitions.swift in Sources */,
+				661FBEDD1F14B58C0073AED5 /* AnimatorViewController.swift in Sources */,
 				663CCE501F127909000047BE /* AppDelegate.swift in Sources */,
+				661FBEDF1F14B5940073AED5 /* SpringAnimatorViewController.swift in Sources */,
+				661FBEDB1F14B5860073AED5 /* BasicAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +356,7 @@
 				663CCE601F127909000047BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
